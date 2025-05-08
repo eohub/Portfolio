@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>NAS Raspberry</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+<!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi-back"></i>
+                        <span>Mon portfolio</span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html">Page d'accueil</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html">À propos de moi</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="articles.html">Articles</a>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projets</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="nas.html">NAS Raspberry</a></li>
+
+                                    <li><a class="dropdown-item" href="hackathon.html">Hackathon</a></li>
+
+                                    <li><a class="dropdown-item" href="duchemol.html">Cabinet Duchemol</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="stage.html">Stages</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="veille.html">Ma veille informatique</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+            
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 mb-5">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Page d'accueil</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Projets</li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">NAS Raspberry</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Projet de NAS avec un Raspberry PI 5</h2>
+
+                            <div class="d-flex align-items-center mt-5">
+                                <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Lire l'article</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="topics-detail-block bg-white shadow-lg">
+                                <img src="images/raspberry.jpg" class="topics-detail-block-image img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 m-auto">
+                            <h3 class="mb-4">Mise en place d'un NAS personnel</h3>
+
+                            <p>Pour mon NAS personnel, qui tourne sur un <b>Raspberry Pi 5</b>, j’ai choisi comme interface graphique <b>CasaOS</b>. C’est une interface fluide, 
+                                avec de nombreuses fonctionnalités intéressantes, comme la possibilité de créer des <b>RAID</b> avec plusieurs disques durs, ou encore d’installer 
+                                des applications via <b>Docker</b> grâce à l’App Store intégré. 
+                            </p>
+
+                            <div class="row my-4">
+                                <div class="col-lg-12 col-md-6 col-12">
+                                    <img src="images/casaos.png" class="topics-detail-block-image img-fluid">
+                                </div>
+                            </div>
+
+                            <p>Comme solution auto-hébergée pour mes <b>films et séries</b>, j’utilise <b>Jellyfin</b>, qui dispose d’une interface très simple et permet d’accéder à ma bibliothèque depuis n’importe quel appareil via <b>WireGuard</b>. 
+                                Jellyfin intègre également la <b>gestion des utilisateurs et des bibliothèques</b>.  
+                            </p>
+
+                            <div class="row my-4">
+                                <div class="col-lg-12 col-md-6 col-12">
+                                    <img src="images/jellyfin.png" class="topics-detail-block-image img-fluid">
+                                </div>
+                            </div>
+
+                            <p>Pour l’accès à distance, j’utilise le <b></b>VPN WireGuard</b>. Avec ce VPN, j’ai intégré une <b>interface graphique</b> appelée <b>WGDashboard</b>, 
+                                qui me permet de gérer mes pairs, de visualiser les débits utilisés, ou encore de générer rapidement des fichiers de configuration.
+                            </p>
+
+                            <div class="row my-4">
+                                <div class="col-lg-12 col-md-6 col-12">
+                                    <img src="images/wg.png" class="topics-detail-block-image img-fluid">
+                                </div>
+                            </div>
+
+                            <p>J’ai également intégré <b>Pi-hole</b> à mon NAS comme <b>solution DNS</b>, afin que tout mon trafic passe par Pi-hole, 
+                                soit ainsi <b>filtré</b>, et renforce encore un peu plus la sécurité de mon NAS.
+                            </p>
+
+                            <div class="row my-4">
+                                <div class="col-lg-12 col-md-6 col-12">
+                                    <p>(image de l'interface pihole)</p>
+                                    <img src="" class="topics-detail-block-image img-fluid">
+                                </div>
+
+                                <p>Enfin, comme solution de sécurité avancée, j’ai installé un <b>pare-feu UFW</b>, qui me permet d’ouvrir ou de fermer les ports nécessaires sur mon NAS.
+                                    J’ai également mis en place <b>Fail2ban</b> pour <b>sécuriser ma connexion SSH</b> et réduire les tentatives de connexion, ce qui <b>permet de limiter les attaques par force brute</b>.
+                                    Pour finir, j’ai configuré un serveur <b>proxy Squid</b>, qui me permet d’anonymiser mon trafic sur Internet tout en bloquant certains domaines ou les publicités.
+                                </p>
+    
+                                <div class="row my-4">
+                                    <div class="col-lg-12 col-md-6 col-12">
+                                        <img src="images/ufw_fail2ban_squid.png" class="topics-detail-block-image img-fluid">
+                                    </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Informations</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 0772248110" class="site-footer-link">
+                                07 72 24 81 10
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:martin.enzo.pro@gmail.com" class="site-footer-link">
+                                martin.enzo.pro@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2025 Enzo Martin. Tous droits réservés.
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
